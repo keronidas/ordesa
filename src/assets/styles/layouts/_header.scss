@@ -1,54 +1,86 @@
 header {
     position: fixed;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    top: 0;
     width: 100%;
+    top: 0;
     left: 0;
     padding: 20px;
+    display: flex;
+    align-items: center;
     z-index: 1000;
     justify-content: space-between;
+
+    @media screen and (max-width: $desktop) {
+        position: absolute;
+        justify-content: center;
+    }
+
     // background-color: rgba(0, 0, 0, 0.1);
 
     img {
         max-width: 150px;
-        margin-left: 100px;
+
+        @media screen and (min-width: $desktop) {
+            margin-left: 100px;
+
+        }
+    }
+}
+
+ul {
+    color: white;
+    width: auto;
+    height: 100%;
+    text-align: center;
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+
     }
 
-    ul {
+    @media screen and (min-width: $tablet) {
         display: flex;
         flex-direction: row;
         gap: 15px;
         align-items: center;
         justify-content: flex-end;
-        width: auto;
-        height: 100%;
-        color: white;
         font-size: 18px;
-        margin: 0;
-        padding: 0;
         list-style: none;
-        margin-right: 50px;
 
-        a {
-            color: inherit;
-            padding: 10px 15px;
-            text-decoration: none;
-            transition: background-color 0.3s;
+    }
 
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.2);
-                border-radius: 5px;
-            }
-        }
+    // margin-right: 50px;
 
-        li {
-            margin: 0 10px;
-            text-align: center;
-            font-size: 22px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 100;
+    a {
+        color: inherit;
+        padding: 10px 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
         }
     }
+
+    li {
+        text-align: center;
+
+        
+        // Reorganiza o encapsula las declaraciones que vienen después de la media query
+        
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        
+        // Media query anidada
+        @media screen and (max-width: $desktop) {
+            font-size: 18px;
+        }
+    }
+
+}
+
+.active {
+    color: yellow;
 }
