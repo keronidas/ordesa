@@ -33,12 +33,12 @@ ul {
     height: 100%;
     text-align: center;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $desktop) {
         display: none;
 
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row;
         gap: 15px;
@@ -66,13 +66,13 @@ ul {
     li {
         text-align: center;
 
-        
+
         // Reorganiza o encapsula las declaraciones que vienen después de la media query
-        
+
         font-size: 22px;
         font-family: 'Poppins', sans-serif;
         font-weight: 100;
-        
+
         // Media query anidada
         @media screen and (max-width: $desktop) {
             font-size: 18px;

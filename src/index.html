@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <audio src="./assets/audio/piano.mp3" autoplay loop></audio>
+
 
   <div class="real-main">
 
@@ -27,6 +27,7 @@
             belleza de la naturaleza se
             manifiesta en su máxima expresión. Ya sea para un tranquilo paseo o un desafiante ascenso, el parque promete
             una experiencia inolvidable para todos los visitantes.</p>
+            
           <button class="miBoton" onclick="window.location='/#colaDeCaballo'">Se Ordesa</button>
         </div>
         <div class="imagenes">
@@ -110,7 +111,11 @@
     </footer>
 
   </div>
+  <audio loop muted id="background-audio">
+    <source src="./assets/audio/piano.ogg" type="audio/ogg">
+  </audio>
 </body>
+<script src="./assets/scripts/audio.js"></script>
 <script src="./assets/scripts/deslizamiento.js"></script>
 <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 
