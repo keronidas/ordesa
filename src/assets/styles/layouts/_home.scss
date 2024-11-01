@@ -276,6 +276,9 @@ body {
     max-height: fit-content;
 
   }
+  title{
+    display: none;
+  }
 
   img {
     width: 50%;
@@ -331,7 +334,7 @@ body {
     }
   }
 
-  
+
   #sendaDeLosCazadores {
     display: flex;
     flex-direction: column;
