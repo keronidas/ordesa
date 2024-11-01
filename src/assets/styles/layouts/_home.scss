@@ -260,11 +260,133 @@ body {
 
     }
   }
+}
 
-  .pagina--2 {}
+@media screen and (max-width: $desktop) {
 
-  .pagina--3 {}
+  html,
+  body {
+    overflow: auto;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    justify-content: start;
+    max-width: auto;
+    max-height: fit-content;
 
-  .pagina--4 {}
+  }
+
+  img{
+    width: 50%;
+    height: auto;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+
+  }
+
+
+  .pagina--1 {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    max-height: fit-content;
+    margin-bottom: 10%;
+    padding: 10%;
+
+  }
+
+  .pagina--2,
+  #colaDeCaballo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-width: auto;
+    max-height: fit-content;
+    min-height: fit-content;
+    margin-bottom: 10%;
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      min-height: fit-content;
+      justify-content: start;
+      width: 100%;
+
+      .contenido {
+        padding: 10%;
+        min-height: fit-content;
+        min-width: 100%;
+        text-align: start;
+
+        p {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .pagina--3,
+  #sendaDeLosCazadores {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-width: auto;
+    min-height: fit-content;
+    margin-bottom: 10%;
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      min-height: fit-content;
+
+      .contenido {
+        padding: 10%;
+        min-height: fit-content;
+        min-width: 100%;
+        text-align: start;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .pagina--4,
+  #fajaDeLasFlores {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-width: auto;
+    max-height: fit-content;
+    margin-bottom: 10%;
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      min-height: fit-content;
+
+      .contenido {
+        padding: 10%;
+        min-height: fit-content;
+        min-width: 100%;
+        text-align: start;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
 
 }
