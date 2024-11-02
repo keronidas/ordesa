@@ -1,16 +1,15 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
+import { Howl } from 'howler';
+document.addEventListener("DOMContentLoaded", function () {
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
+  +(function () {
+    const university = "UOC";
+    console.log(`Hello, ${university}!`);
+  })();
 
-/**
- * Write any other JavaScript below
- */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+
+
+  const sound = new Howl({
+    src: ['assets/sounds/piano.mp3'],
+  });
+});

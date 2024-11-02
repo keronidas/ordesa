@@ -1,5 +1,6 @@
 // Función para prevenir el desplazamiento del ratón en resoluciones de PC
 
+
 const mobileWidth = 576;
 const tabletWidth = 768;
 const desktopWidth = 992;
