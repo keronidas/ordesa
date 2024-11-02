@@ -39,16 +39,20 @@ body {
   background-size: cover;
   left: 0;
 }
-
-#home,
-#colaDeCaballo,
-#sendaDeLosCazadores,
-#fajaDeLasFlores {
-  width: 100vw;
-  height: 100vh;
-
+@media screen and (min-width: $desktop) {
+  
+  
+  
+  #home,
+  #colaDeCaballo,
+  #sendaDeLosCazadores,
+  #fajaDeLasFlores {
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
 }
-
 #home {
 
 
@@ -166,53 +170,49 @@ body {
 
 }
 
-#colaDeCaballo,
-#sendaDeLosCazadores,
-#fajaDeLasFlores {
+@media screen and (min-width: $desktop) {
 
-  padding-top: 100px;
+  #colaDeCaballo,
+  #sendaDeLosCazadores,
+  #fajaDeLasFlores {
 
-
-
-  .flex {
-    width: 100vw;
-    display: flex;
-    height: 100vh;
+    padding-top: 100px;
 
 
 
+    .flex {
+      width: 100vw;
+      display: flex;
+      height: 100vh;
+      font-size: 12px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      font-family: 'Poppins',
+        sans-serif;
+      color: white;
+      font-weight: 100;
+    }
+
+    iframe {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .contenido {
+      max-width: 50%;
+      padding: 15px;
+    }
+
+    .contenido p {
+      line-height: 1.6;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: white;
 
 
-
-    font-size: 12px;
-
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-family: 'Poppins',
-      sans-serif;
-    color: white;
-    font-weight: 100;
+    }
   }
 
-  iframe {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-
-  .contenido {
-    max-width: 50%;
-    padding: 15px;
-  }
-
-  .contenido p {
-    line-height: 1.6;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: white;
-
-
-  }
 }
 
 @media screen and (max-width: $desktop) {
@@ -276,12 +276,13 @@ body {
     max-height: fit-content;
 
   }
-  title{
+
+  title {
     display: none;
   }
 
   img {
-    width: 50%;
+    width: 70%;
     height: auto;
   }
 
@@ -302,27 +303,49 @@ body {
 
   }
 
+  #colaDeCaballo,
+  #sendaDeLosCazadores,
+  #fajaDeLasFlores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins',
+      sans-serif;
+    font-weight: 100;
+    text-align: start;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+    }
+
+    iframe {
+      width: 100%;
+      height: auto;
+      padding: 0% 10%;
+    }
+  }
 
   #colaDeCaballo {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 0;
-    max-width: auto;
-    max-height: fit-content;
-    min-height: fit-content;
-    margin-bottom: 10%;
+    max-width: fit-content;
+
 
     .flex {
       display: flex;
       flex-direction: column;
-      min-height: fit-content;
       justify-content: start;
-      width: 100%;
+      width: fit-content;
 
       .contenido {
         padding: 10%;
-        min-height: fit-content;
         min-width: 100%;
         text-align: start;
 
@@ -342,12 +365,13 @@ body {
     margin: 0;
     max-width: auto;
     min-height: fit-content;
-    margin-bottom: 10%;
 
     .flex {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       min-height: fit-content;
+      justify-content: center;
+      align-items: center;
 
       .contenido {
         padding: 10%;
@@ -370,12 +394,13 @@ body {
     margin: 0;
     max-width: auto;
     max-height: fit-content;
-    margin-bottom: 10%;
+    align-items: center;
 
     .flex {
       display: flex;
       flex-direction: column;
       min-height: fit-content;
+      align-items: center;
 
       .contenido {
         padding: 10%;
