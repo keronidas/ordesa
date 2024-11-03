@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  
-<script src="./assets/scripts/deslizamiento.js"></script>
-<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+  <script src="./assets/scripts/deslizamiento.js"></script>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   <title>Ordesa y Monte Perdido</title>
 
 </head>
@@ -19,29 +19,29 @@
 
     <include src="header.html"></include>
     <main>
-      <div class="pagina--1" id="home">
+      <div class="section--intro" id="home">
 
-        <div class="introduccion">
-          <h1>Parque de Ordesa</h1>
-          <h2>Un recorrido para disfrutar</h2>
-          <p>El Parque Nacional de Ordesa, situado en el corazón de los Pirineos, es un paraíso natural que atrae a
+        <div class="section__content">
+          <h1 class="section__title">Parque de Ordesa</h1>
+          <h2 class="section__subtitle">Un recorrido para disfrutar</h2>
+          <p class="section__description">El Parque Nacional de Ordesa, situado en el corazón de los Pirineos, es un paraíso natural que atrae a
             amantes del senderismo y la aventura. Con sus profundos valles, majestuosas montañas y ríos cristalinos, el
             parque ofrece una variedad de rutas que permiten explorar su rica biodiversidad. Ordesa es un lugar donde la
             belleza de la naturaleza se
             manifiesta en su máxima expresión. Ya sea para un tranquilo paseo o un desafiante ascenso, el parque promete
             una experiencia inolvidable para todos los visitantes.</p>
 
-          <button class="miBoton" onclick="window.location='/#colaDeCaballo'">Se Ordesa</button>
+          <button class="button button--primary" onclick="window.location='/#colaDeCaballo'">Se Ordesa</button>
         </div>
-        <div class="imagenes">
-          <div class="imagen item"><img src="./assets/images/colaDeCaballo.svg" alt="" height="auto"
+        <div class="section__images">
+          <div class="image-card"><img src="./assets/images/colaDeCaballo.svg" alt="" height="auto"
               onclick="window.location='/#colaDeCaballo'">
 
           </div>
-          <div class="imagen item"><img src="./assets/images/sendaCazadores.svg" alt="" height="auto"
+          <div class="image-card"><img src="./assets/images/sendaCazadores.svg" alt="" height="auto"
               onclick="window.location='/#sendaDeLosCazadores'">
           </div>
-          <div class="imagen item"><img src="./assets/images/fajaFlores.svg" alt="" height="auto"
+          <div class="image-card"><img src="./assets/images/fajaFlores.svg" alt="" height="auto"
               onclick="window.location='/#fajaDeLasFlores'"></div>
 
         </div>
@@ -49,15 +49,15 @@
       </div>
 
 
-      <div class="imagen--fondo"></div>
-      <div class="pagina--2" id="colaDeCaballo">
-        <div class="flex">
+      <div class="section--background-image"></div>
+      <div class="section--content" id="colaDeCaballo">
+        <div class="content-wrapper">
 
           <iframe width="700" height="415" src="https://www.youtube.com/embed/9FTrqGcB5HI?si=A16rdVz2WkfNDI39"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="contenido">
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="content-wrapper__video"></iframe>
+          <div class="content-wrapper__text">
             <p>La ruta de la Cola de Caballo es una de las más autohermosas del Parque Nacional de Ordesa. Comienza en
               el
               aparcamiento de la pradera de Ordesa, al que se accede en autobús desde Torla en temporada alta o en coche
@@ -74,9 +74,9 @@
         </div>
 
       </div>
-      <div class="pagina--3" id="sendaDeLosCazadores">
-        <div class="flex">
-          <div class="contenido">
+      <div class="section--content" id="sendaDeLosCazadores">
+        <div class="content-wrapper">
+          <div class="content-wrapper__text">
             <p>La Senda de los Cazadores es una de las rutas más impresionantes del Parque Nacional de Ordesa y Monte
               Perdido. Comienza en la pradera de Ordesa, con un primer tramo de fuerte subida en zigzag hasta alcanzar
               un mirador con vistas al circo de Cotatuero y su cascada. Luego, la senda desciende suavemente hacia el
@@ -92,10 +92,10 @@
 
         </div>
       </div>
-      <div class="pagina--4" id="fajaDeLasFlores">
-        <div class="flex">
+      <div class="section--content" id="fajaDeLasFlores">
+        <div class="content-wrapper">
           <img src="./assets/images/fajaFloresFoto.jpg" width="700" alt="faja de las flores">
-          <div class="contenido">
+          <div class="content-wrapper__text">
             <p>La Faja de las Flores es un balcón de 3 km en lo alto del Valle de Ordesa, que ofrece vistas
               espectaculares del paisaje. Al mirar hacia abajo, se aprecian los balcones del valle y el denso bosque de
               la Pradera. La faja es fácil de caminar y se caracteriza por una gran roca que marca su final.</p>
